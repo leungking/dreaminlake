@@ -1,0 +1,676 @@
+/* Theme Name: DreamInLake; Version: 20261021; Author: 梦里依稀的小湖; Link: https://610000.xyz/ */
+:root{--ink:#30291f;--muted:#6e6252;--line:rgba(75,55,31,.18);--edge-l:9.3%;--edge-r:7.1%;--inner:3.2%;--left:calc(var(--edge-l) + var(--inner));--right:calc(var(--edge-r) + var(--inner))}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#20241c url(images/dreaminlake_body_bg.png) repeat;color:var(--ink);font:14.5px/1.82 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;overflow-wrap:anywhere}a{color:#65471f;text-underline-offset:.16em}img{max-width:100%;height:auto}.site-shell{width:min(88vw,1180px);margin:auto}.site-header{background:url(images/dreaminlake_container_top.jpg) center top/100% auto no-repeat}.brand-bar{position:relative;min-height:210px;padding:44px var(--right) 24px var(--left)}.site-identity{position:relative;z-index:2}.site-identity h1{margin:0;font:700 clamp(1.95rem,3.65vw,3.15rem)/1.06 Georgia,"Songti SC",serif}.site-identity h1 a{color:#f2dba4;text-decoration:none;text-shadow:0 2px 12px #000}.site-identity p{margin:.55rem 0 0;color:#d8ccb2;font-size:clamp(.74rem,.88vw,.84rem)}#bulb{position:absolute;right:0;top:0;width:337px;height:210px;background:url(images/dreaminlake_light_off.png) right top/337px 273px no-repeat}.brand-bar:hover #bulb{background-image:url(images/dreaminlake_light_on.png)}.site-nav{height:128px;background:url(images/dreaminlake_menu_bg.png) center top/100% 128px no-repeat}.nav-panel{height:128px;padding:22px var(--right) 16px var(--left);display:flex;gap:20px;justify-content:space-between}.site-nav ul{display:flex;flex:1;gap:16px;list-style:none;margin:0;padding:0}.site-nav a{display:grid;place-items:center;height:44px;padding:0 4px;color:#f2e2bd;text-decoration:none;font-size:.88rem;white-space:nowrap}.site-nav a.current{font-weight:700;text-decoration:underline;text-underline-offset:6px}.site-search{display:flex;flex:0 0 clamp(160px,15vw,210px);height:44px;border:1px solid #f3dfaf77;border-radius:999px;background:#ffffff12;overflow:hidden}.site-search input{width:100%;min-width:0;border:0;outline:0;color:#fff3d4;background:transparent;padding:8px 2px 8px 15px;font:inherit}.site-search input::placeholder{color:#efdfbd}.site-search button{border:0;background:transparent;color:#fff0c9;padding:0 12px}.content-wrap{display:block;padding:clamp(36px,3.4vw,48px) var(--right) 72px var(--left);background:url(images/dreaminlake_content_bg.png) center top/100% auto repeat-y}.main-content{width:100%;min-width:0}.post-card,.single-post{padding-bottom:38px;margin-bottom:38px;border-bottom:1px solid var(--line)}.entry-title{margin:0 0 13px;font:700 clamp(1.3rem,2.2vw,1.85rem)/1.25 Georgia,"Songti SC",serif}.entry-title a{color:inherit;text-decoration:none;transition:.2s}.entry-title a:hover{color:#9b6f2f;text-shadow:0 1px #ffefc773}.entry-meta{display:flex;flex-wrap:wrap;gap:4px 8px;margin-bottom:21px;color:var(--muted);font-size:clamp(.72rem,.86vw,.82rem)}.entry-content{font-size:clamp(.92rem,1.05vw,1rem);line-height:1.85}.entry-content p{margin:0 0 1.3em}.entry-content img{max-width:100%;height:auto}.post-navigation{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:-10px 0 36px;padding-bottom:32px;border-bottom:1px solid var(--line)}.post-navigation span{display:block;color:var(--muted);font-size:.72rem}.post-navigation a{color:var(--ink);font:700 1rem Georgia,"Songti SC",serif;text-decoration:none}.post-navigation a:hover{color:#9b6f2f}.post-navigation em{color:var(--muted);font-style:normal}.post-navigation .next{text-align:right}.comments-area,.respond{min-width:0}.comments-area h2,.widget h2{font:700 1.08rem Georgia,"Songti SC",serif}.identity{display:grid;grid-template-columns:1fr 1fr;gap:14px}.respond input,.respond textarea{display:block;width:100%;margin-bottom:14px;padding:10px;border:1px solid #5b462861;border-radius:8px;background:#ffffff0b;color:var(--ink);font:inherit;outline:0}.respond input::placeholder,.respond textarea::placeholder{color:#443625aa}.submit{border:0;border-radius:999px;background:#241a11;color:#fff;padding:10px 20px}.sidebar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(20px,2.6vw,38px);width:100%;margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}.sidebar ul{list-style:none;margin:0;padding:0}.widget{min-width:0;padding-bottom:22px;font-size:.9rem}.widget li{padding:5px 0}#content_bottom{aspect-ratio:900/105;background:url(images/dreaminlake_content_bottom.png) center/100% 100% no-repeat}#dreaminlake_footer{padding:16px;text-align:center;color:#d5c39c;background:url(images/dreaminlake_footer_bg.png) center top/100% 71px repeat-y;font-size:.82rem}#dreaminlake_footer p{margin:3px}#dreaminlake_footer a{color:#f0dcae}
+@media(max-width:1199px){.site-shell{width:min(98.5vw,1080px)}.brand-bar{min-height:174px;padding-top:34px}.site-nav{position:relative;margin-top:-18px;height:108px;background-size:100% 108px}.nav-panel{height:108px;padding-top:14px}.sidebar{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}.content-wrap{padding-top:34px}}
+@media(max-width:640px){:root{--inner:4.2%}.site-shell{width:100%;overflow:hidden}.brand-bar{min-height:132px;padding:22px var(--right) 10px var(--left)}.site-identity h1{font-size:clamp(1.62rem,7.4vw,2rem)}.site-identity p{font-size:.68rem}#bulb{width:104px;height:90px;background-size:116px 94px}.site-nav{margin-top:-24px;height:58px;background-size:100% 58px}.nav-panel{height:58px;padding:7px var(--right) 7px var(--left);gap:6px}.site-nav ul{gap:7px}.site-nav a{height:30px;font-size:.78rem}.site-search{flex:0 1 132px;max-width:36vw;height:34px}.site-search input{font-size:16px;padding:0 2px 0 11px}.site-search button{padding:0 8px;font-size:15px}.content-wrap{padding-top:24px}.entry-title{font-size:clamp(1.3rem,5.9vw,1.58rem)}.entry-meta{font-size:.7rem}.entry-content{font-size:.9rem}.post-navigation{grid-template-columns:1fr}.post-navigation .next{text-align:left}.identity{grid-template-columns:1fr}.sidebar{display:block;margin-top:26px;padding-top:24px}.widget{border-bottom:1px solid var(--line);margin-bottom:20px}}
+
+/* v3.5: tighter article start, quieter post navigation, refined bottom modules */
+/* Pull the first article closer to the parchment menu without touching the artwork. */
+.content-wrap{padding-top:26px}
+.main-content>*:first-child{margin-top:0}
+
+/* Previous/next navigation should be supporting information, not a second headline. */
+.post-navigation{
+  gap:24px;
+  margin:-16px 0 30px;
+  padding:0 0 26px;
+}
+.post-navigation span{
+  margin-bottom:3px;
+  font-size:.64rem;
+  line-height:1.45;
+  letter-spacing:.05em;
+  font-weight:400;
+}
+.post-navigation a{
+  font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:.82rem;
+  line-height:1.55;
+  font-weight:400;
+}
+.post-navigation em{
+  font-size:.76rem;
+  line-height:1.55;
+  font-weight:400;
+}
+
+/* Bottom modules: clearer rhythm and less empty vertical space. */
+.sidebar{
+  gap:22px clamp(18px,2.2vw,30px);
+  margin-top:26px;
+  padding-top:24px;
+  align-items:start;
+}
+.widget{
+  margin:0;
+  padding:0 0 16px;
+}
+.widget h2{
+  margin:0 0 9px;
+  font-size:1rem;
+  line-height:1.35;
+}
+.widget ul{margin:0;padding:0}
+.widget li{
+  padding:3px 0;
+  line-height:1.6;
+}
+
+@media(max-width:1199px) and (min-width:641px){
+  .content-wrap{padding-top:24px}
+  .post-navigation{margin-top:-14px;margin-bottom:28px;padding-bottom:24px}
+  .post-navigation a{font-size:.8rem}
+  .sidebar{gap:18px 28px;margin-top:24px;padding-top:22px}
+  .widget{padding-bottom:14px}
+}
+@media(max-width:640px){
+  .content-wrap{padding-top:18px}
+  .post-navigation{gap:12px;margin:-12px 0 24px;padding-bottom:22px}
+  .post-navigation span{font-size:.61rem;margin-bottom:2px}
+  .post-navigation a{font-size:.78rem;line-height:1.5}
+  .post-navigation em{font-size:.72rem}
+  .sidebar{margin-top:20px;padding-top:20px}
+  .widget{margin-bottom:14px;padding-bottom:14px}
+  .widget h2{margin-bottom:7px;font-size:.96rem}
+  .widget li{padding:2px 0}
+}
+
+/* v3.6: parchment-toned comment button and truly optional bottom widgets */
+.submit{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:8px 19px;
+  border:1px solid rgba(99,68,29,.58);
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(236,209,150,.7),rgba(184,139,74,.5));
+  color:#4a3217;
+  box-shadow:inset 0 1px 0 rgba(255,248,222,.55),0 2px 7px rgba(69,45,19,.14);
+  font-weight:500;
+  text-shadow:0 1px 0 rgba(255,244,214,.45);
+  cursor:pointer;
+  transition:background-color .18s ease,border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+}
+.submit:hover,
+.submit:focus-visible{
+  border-color:rgba(105,69,25,.82);
+  background:linear-gradient(180deg,rgba(246,222,169,.84),rgba(195,148,79,.66));
+  box-shadow:inset 0 1px 0 rgba(255,250,230,.7),0 4px 11px rgba(69,45,19,.2);
+  transform:translateY(-1px);
+  outline:none;
+}
+.submit:active{
+  transform:translateY(0);
+  box-shadow:inset 0 1px 3px rgba(72,43,12,.18);
+}
+@media(max-width:640px){
+  .submit{min-height:36px;padding:7px 17px;font-size:.84rem}
+}
+
+/* v3.7: refined page-link typography; search field intentionally unchanged */
+.site-nav ul{
+  gap:clamp(12px,1.5vw,22px);
+}
+.site-nav li{
+  position:relative;
+  flex:0 0 auto;
+}
+.site-nav li a{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  height:42px;
+  padding:0 5px;
+  color:#ead7ae;
+  font-family:Georgia,"Songti SC","STSong",serif;
+  font-size:.9rem;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:.09em;
+  text-decoration:none;
+  text-shadow:0 1px 2px rgba(38,25,12,.55);
+  transition:color .18s ease,text-shadow .18s ease,transform .18s ease;
+}
+.site-nav li a::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  right:50%;
+  bottom:6px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#f1d79d 25%,#f1d79d 75%,transparent);
+  opacity:0;
+  transition:left .2s ease,right .2s ease,opacity .2s ease;
+}
+.site-nav li a:hover,
+.site-nav li a:focus-visible{
+  color:#fff0c8;
+  text-shadow:0 1px 2px rgba(38,25,12,.72),0 0 8px rgba(238,201,126,.2);
+  transform:translateY(-1px);
+  outline:none;
+}
+.site-nav li a:hover::after,
+.site-nav li a:focus-visible::after,
+.site-nav li a.current::after{
+  left:8%;
+  right:8%;
+  opacity:1;
+}
+.site-nav li a.current{
+  color:#fff1ca;
+  font-weight:600;
+  text-decoration:none;
+}
+
+@media(max-width:1199px) and (min-width:641px){
+  .site-nav ul{gap:clamp(10px,1.35vw,17px)}
+  .site-nav li a{
+    height:34px;
+    padding:0 3px;
+    font-size:.82rem;
+    letter-spacing:.07em;
+  }
+  .site-nav li a::after{bottom:3px}
+}
+@media(max-width:640px){
+  .site-nav ul{gap:7px}
+  .site-nav li a{
+    height:30px;
+    padding:0 1px;
+    font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    font-size:.76rem;
+    font-weight:400;
+    letter-spacing:.035em;
+  }
+  .site-nav li a::after{bottom:2px}
+  .site-nav li a:hover{transform:none}
+  .site-nav li a.current{font-weight:600}
+}
+
+/* v3.8: quieter site title and refined article typography */
+.site-identity h1{
+  font-size:clamp(1.72rem,3.15vw,2.72rem);
+  line-height:1.07;
+  letter-spacing:.005em;
+}
+.site-identity p{
+  font-size:clamp(.7rem,.8vw,.79rem);
+  line-height:1.5;
+}
+
+/* Article titles: smaller, more refined and less visually heavy. */
+.entry-title{
+  margin-bottom:11px;
+  font-size:clamp(1.38rem,2.25vw,2.02rem);
+  line-height:1.24;
+  font-weight:600;
+  letter-spacing:-.012em;
+}
+.entry-title a:hover,
+.entry-title a:focus-visible{
+  color:#9b6f2f;
+  text-shadow:0 1px 0 rgba(255,239,199,.4);
+}
+.entry-meta{margin-bottom:18px}
+
+/* Body copy: slightly smaller with a calmer reading rhythm. */
+.entry-content{
+  font-size:clamp(.86rem,.94vw,.94rem);
+  line-height:1.88;
+  letter-spacing:.005em;
+}
+.entry-content p{margin:0 0 1.18em}
+.entry-content h2{
+  margin:1.65em 0 .62em;
+  font-size:1.35em;
+  line-height:1.35;
+  font-weight:600;
+}
+.entry-content h3{
+  margin:1.5em 0 .55em;
+  font-size:1.16em;
+  line-height:1.4;
+  font-weight:600;
+}
+.entry-content blockquote{
+  margin:1.35em 0;
+  padding:10px 14px;
+  border-left:2px solid rgba(115,79,32,.48);
+  color:#5e4d39;
+  background:rgba(255,255,255,.045);
+}
+.entry-content ul,
+.entry-content ol{padding-left:1.35em}
+.entry-content li{margin:.22em 0}
+.entry-content a{color:#765121}
+.entry-content a:hover{color:#9b6f2f}
+
+@media(max-width:1199px) and (min-width:641px){
+  .site-identity h1{font-size:clamp(1.68rem,3.9vw,2.38rem)}
+  .entry-title{font-size:clamp(1.34rem,3.35vw,1.82rem)}
+  .entry-content{font-size:.88rem;line-height:1.86}
+}
+@media(max-width:640px){
+  .site-identity h1{font-size:clamp(1.48rem,6.8vw,1.82rem)}
+  .site-identity p{font-size:.64rem}
+  .entry-title{
+    margin-bottom:9px;
+    font-size:clamp(1.17rem,5.25vw,1.4rem);
+    line-height:1.25;
+  }
+  .entry-meta{margin-bottom:15px}
+  .entry-content{font-size:.84rem;line-height:1.82}
+  .entry-content p{margin-bottom:1.08em}
+  .entry-content blockquote{padding:9px 11px}
+}
+
+/* v3.9: date-led article titles; author/category/comment metadata removed */
+.entry-heading{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  min-width:0;
+  margin:0 0 18px;
+}
+.entry-heading .entry-title{
+  min-width:0;
+  margin:0;
+}
+.entry-date{
+  flex:0 0 58px;
+  width:58px;
+  height:58px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(73,52,28,.26);
+  border-radius:50%;
+  color:#fff8e6;
+  text-align:center;
+  text-decoration:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 2px 8px rgba(65,42,17,.13);
+  text-shadow:0 1px 1px rgba(53,34,15,.38);
+}
+.entry-date-ym{
+  display:block;
+  font-size:.55rem;
+  line-height:1.05;
+  letter-spacing:.035em;
+  opacity:.88;
+}
+.entry-date-day{
+  display:block;
+  margin-top:2px;
+  font:600 1.22rem/1 Georgia,"Times New Roman",serif;
+}
+.entry-date-tone-1{background:rgba(142,85,57,.72)}
+.entry-date-tone-2{background:rgba(92,113,73,.74)}
+.entry-date-tone-3{background:rgba(158,116,47,.74)}
+.entry-date-tone-4{background:rgba(102,92,127,.7)}
+.entry-date-tone-5{background:rgba(73,112,116,.72)}
+.entry-date-tone-6{background:rgba(137,72,82,.7)}
+
+/* Metadata is intentionally absent; title rhythm starts directly from the date marker. */
+.entry-heading+.entry-content{margin-top:0}
+.page-entry>.entry-title{margin-bottom:18px}
+
+@media(max-width:1199px) and (min-width:641px){
+  .entry-heading{gap:13px;margin-bottom:16px}
+  .entry-date{flex-basis:54px;width:54px;height:54px}
+  .entry-date-day{font-size:1.12rem}
+  .entry-date-ym{font-size:.52rem}
+}
+@media(max-width:640px){
+  .entry-heading{gap:10px;margin-bottom:14px;align-items:center}
+  .entry-date{flex-basis:45px;width:45px;height:45px}
+  .entry-date-day{font-size:.98rem;margin-top:1px}
+  .entry-date-ym{font-size:.46rem;letter-spacing:.02em}
+  .entry-heading .entry-title{margin:0}
+  .page-entry>.entry-title{margin-bottom:14px}
+}
+
+/* v4.0: letter-like reading typography for the parchment body */
+.entry-content{
+  max-width:100%;
+  color:#3b3023;
+  font-family:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  font-size:clamp(.86rem,.94vw,.94rem);
+  line-height:2;
+  letter-spacing:.012em;
+  text-rendering:optimizeLegibility;
+  hanging-punctuation:first allow-end last;
+}
+
+/* Chinese prose convention: two-character first-line indent. */
+.entry-content p{
+  margin:0 0 1.12em;
+  text-indent:2em;
+  text-align:justify;
+  text-justify:inter-ideograph;
+  orphans:3;
+  widows:3;
+}
+.entry-content p:empty{display:none}
+.entry-content p:has(> img:only-child),
+.entry-content p:has(> picture:only-child),
+.entry-content p:has(> iframe:only-child),
+.entry-content p:has(> video:only-child){
+  text-indent:0;
+  text-align:center;
+}
+
+/* Opening and structural blocks should not inherit paragraph indentation. */
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content blockquote p,
+.entry-content li p,
+.entry-content figcaption,
+.entry-content td p,
+.entry-content th p{
+  text-indent:0;
+  text-align:left;
+}
+.entry-content h2,
+.entry-content h3,
+.entry-content h4{
+  color:#382918;
+  font-family:"Songti SC","STSong",Georgia,serif;
+  font-weight:600;
+  letter-spacing:.035em;
+  break-after:avoid;
+}
+.entry-content h2{
+  margin:1.85em 0 .72em;
+  padding-bottom:.28em;
+  border-bottom:1px solid rgba(105,72,31,.24);
+  font-size:1.34em;
+  line-height:1.45;
+}
+.entry-content h3{
+  margin:1.55em 0 .58em;
+  font-size:1.15em;
+  line-height:1.5;
+}
+.entry-content h4{
+  margin:1.4em 0 .5em;
+  font-size:1.03em;
+  line-height:1.5;
+}
+
+/* Quotation resembles a handwritten note set into the parchment. */
+.entry-content blockquote{
+  position:relative;
+  margin:1.45em 1.2em;
+  padding:.72em 1.15em .72em 1.35em;
+  border-left:2px solid rgba(118,79,31,.52);
+  background:linear-gradient(90deg,rgba(255,250,229,.13),rgba(255,250,229,.035));
+  color:#5b4934;
+  font-size:.96em;
+  line-height:1.9;
+}
+.entry-content blockquote::before{
+  content:"“";
+  position:absolute;
+  left:.2em;
+  top:-.15em;
+  color:rgba(113,76,31,.3);
+  font:2.15em/1 Georgia,serif;
+}
+.entry-content blockquote p{margin:0 0 .65em;padding-left:.5em}
+.entry-content blockquote p:last-child{margin-bottom:0}
+
+.entry-content ul,
+.entry-content ol{
+  margin:1em 0 1.2em;
+  padding-left:2.15em;
+}
+.entry-content li{
+  margin:.28em 0;
+  padding-left:.15em;
+  line-height:1.85;
+}
+.entry-content li::marker{color:#8b612b}
+
+.entry-content a{
+  color:#765121;
+  text-decoration-color:rgba(118,81,33,.45);
+  text-decoration-thickness:1px;
+  text-underline-offset:.2em;
+}
+.entry-content a:hover{
+  color:#9b6f2f;
+  text-decoration-color:#9b6f2f;
+}
+.entry-content strong{color:#352719;font-weight:650}
+.entry-content em{color:#654a2e}
+.entry-content hr{
+  width:52%;
+  margin:2.2em auto;
+  border:0;
+  border-top:1px solid rgba(100,69,31,.3);
+}
+
+.entry-content figure{margin:1.55em auto;text-align:center}
+.entry-content img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:1.55em auto;
+  border-radius:4px;
+  box-shadow:0 4px 14px rgba(62,42,18,.13);
+}
+.entry-content figcaption{
+  margin-top:-.85em;
+  color:#74634e;
+  font-size:.78em;
+  line-height:1.6;
+  text-align:center;
+}
+
+.entry-content pre{
+  max-width:100%;
+  margin:1.4em 0;
+  padding:13px 15px;
+  overflow:auto;
+  border:1px solid rgba(76,57,34,.24);
+  border-radius:6px;
+  background:rgba(50,41,31,.88);
+  color:#efe2c5;
+  font:12px/1.72 ui-monospace,SFMono-Regular,Consolas,monospace;
+  white-space:pre;
+  tab-size:4;
+  -webkit-overflow-scrolling:touch;
+}
+.entry-content code{
+  padding:.08em .3em;
+  border-radius:3px;
+  background:rgba(106,75,37,.11);
+  font: .88em/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;
+}
+.entry-content pre code{padding:0;background:transparent;color:inherit}
+.entry-content table{
+  display:block;
+  width:100%;
+  max-width:100%;
+  margin:1.4em 0;
+  overflow-x:auto;
+  border-collapse:collapse;
+  font-size:.9em;
+  -webkit-overflow-scrolling:touch;
+}
+.entry-content th,
+.entry-content td{
+  padding:7px 10px;
+  border:1px solid rgba(91,67,37,.28);
+  text-align:left;
+  vertical-align:top;
+}
+.entry-content th{background:rgba(117,81,35,.09);font-weight:600}
+
+@media(max-width:1199px) and (min-width:641px){
+  .entry-content{font-size:.87rem;line-height:1.96}
+  .entry-content p{margin-bottom:1.08em}
+  .entry-content blockquote{margin-left:.7em;margin-right:.7em}
+}
+@media(max-width:640px){
+  .entry-content{
+    font-size:.83rem;
+    line-height:1.9;
+    letter-spacing:.006em;
+  }
+  .entry-content p{
+    margin-bottom:1.02em;
+    text-indent:2em;
+    text-align:left;
+  }
+  .entry-content h2{margin-top:1.6em;font-size:1.28em}
+  .entry-content h3{margin-top:1.4em;font-size:1.12em}
+  .entry-content blockquote{
+    margin:1.25em 0;
+    padding:.65em .85em .65em 1.1em;
+  }
+  .entry-content ul,.entry-content ol{padding-left:1.8em}
+  .entry-content pre{padding:11px 12px;font-size:11px}
+}
+
+/* ===== 音视频短代码（4.0扩展） ===== */
+.dl-video-wrap{position:relative;width:100%;aspect-ratio:16/9;margin:1.2em 0;background:#1a1512;border-radius:6px;overflow:hidden}
+.dl-video{position:absolute;inset:0}
+.dl-video .artplayer-app{width:100%;height:100%}
+.dl-play-multi .dl-video-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:-.4em 0 1.2em}
+.dl-video-tab{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:6px 16px;font-size:.85rem;cursor:pointer}
+.dl-video-tab.active,.dl-video-tab:hover{color:#fff;background:#65471f;border-color:#65471f}
+.dl-bili{position:relative;width:100%;aspect-ratio:16/9;margin:1.2em 0;background:#1a1512;border-radius:6px;overflow:hidden;cursor:pointer}
+.dl-bili iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.dl-bili-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#241d16,#3a2c1e)}
+.dl-bili-play{display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#65471f;color:#fff;font-size:22px;transition:.2s}
+.dl-bili:hover .dl-bili-play{transform:scale(1.1);background:#9b6f2f}
+.dl-bili-tip{font-size:13px;color:#c9b896;letter-spacing:.1em}
+.dl-aplayer{margin:1.2em 0;border-radius:6px;overflow:hidden;box-shadow:0 2px 12px rgba(48,41,31,.18)}
+
+/* ===== 九宫格图库 + 灯箱（4.0扩展） ===== */
+.dl-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:1.2em 0}
+.dl-gallery-item{margin:0;aspect-ratio:1/1;overflow:hidden;border-radius:6px;background:#1a1512;cursor:zoom-in}
+.dl-gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+.dl-gallery-item:hover img{transform:scale(1.05)}
+@media(max-width:640px){.dl-gallery{gap:6px}}
+#dl-lightbox{position:fixed;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:rgba(10,8,6,.88);cursor:zoom-out}
+#dl-lightbox[hidden]{display:none}
+#dl-lightbox img{max-width:94vw;max-height:92vh;border-radius:6px;box-shadow:0 8px 40px rgba(0,0,0,.6)}
+#dl-lightbox-close{position:absolute;top:18px;right:26px;font-size:40px;color:#fff;cursor:pointer;line-height:1}
+.entry-content img{cursor:zoom-in}
+
+/* v4.1: 分页导航美化（文章列表/归档/评论分页共用 .page-navigator） */
+.page-navigator{list-style:none;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:34px 0 10px;padding:0}
+.page-navigator li{margin:0;padding:0}
+.page-navigator a,.page-navigator span{display:inline-block;min-width:38px;height:38px;line-height:38px;padding:0 12px;text-align:center;border:1px solid var(--line);border-radius:999px;color:#65471f;background:#fffdf6;text-decoration:none;font-size:.86rem;transition:.2s}
+.page-navigator a:hover{border-color:#65471f;background:#65471f;color:#fff8e7}
+.page-navigator .current a,.page-navigator li.current span{background:#65471f;border-color:#65471f;color:#fff8e7;font-weight:700}
+/* v4.1: 原生 video 兜底（ArtPlayer 挂载失败时仍可见可播） */
+.dl-video-native{width:100%;height:100%;display:block;background:#000}
+
+/* v4.2: 标题/日期章缩小 + 移动端羊皮纸更宽 + 正文微调 */
+.entry-date{flex:0 0 50px;width:50px;height:50px}
+.entry-date-day{font-size:1.02rem}
+.entry-date-ym{font-size:.5rem}
+@media(max-width:1199px) and (min-width:641px){
+  .entry-date{flex-basis:46px;width:46px;height:46px}
+  .entry-date-day{font-size:.95rem}
+}
+@media(max-width:640px){
+  :root{--inner:1.6%}
+  .entry-title{font-size:clamp(1.02rem,4.4vw,1.22rem);line-height:1.32}
+  .entry-date{flex-basis:38px;width:38px;height:38px}
+  .entry-date-day{font-size:.82rem;margin-top:1px}
+  .entry-date-ym{font-size:.42rem;letter-spacing:.02em}
+  .entry-heading{gap:8px;margin-bottom:12px}
+  .entry-content{font-size:.86rem;line-height:1.8}
+}
+
+
+/* v4.4: 移动端纸面近满幅——纸面美术图只占图宽 9.4%-92.6%（两侧透明带），三张图统一放大把透明带挤出屏幕；文字内缩只留碎纸边 */
+/* v4.5: 放大率 118%→115% 并右移定位（position-x 54%），纸面右缘回到约 98.4%，右侧留一丝空 */
+@media(max-width:640px){
+  :root{--edge-l:2.2%;--edge-r:2.2%;--inner:1.4%}
+  /* v4.6: 仅左侧文字内缩 +1%（纸面位置不动）：--left 3.6%→4.6% */
+  :root{--left:calc(3.1% + var(--inner))}
+  .content-wrap{background-size:115% auto;background-position-x:54%}
+  .site-nav{background-size:115% 58px;background-position-x:54%}
+  #content_bottom{background-size:115% 100%;background-position-x:54%}
+}
+
+/* v4.7: 文章标题单行省略（PC/移动一致，不换行；全文在 title 属性，悬停可见） */
+.entry-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.entry-title a{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.entry-heading .entry-title{flex:1 1 auto}
+
+/* v4.8: PJAX 切换时的正文淡出提示 */
+.content-wrap{transition:opacity .18s ease}
+body.dl-loading .content-wrap{opacity:.45}
+
+/* v4.9: 灯箱多图导航（箭头/计数/切换淡入） */
+#dl-lightbox img{cursor:default}
+.dl-lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(20,16,12,.45);color:#fff;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;z-index:2}
+.dl-lb-btn:hover{background:rgba(20,16,12,.78)}
+#dl-lightbox-prev{left:16px}
+#dl-lightbox-next{right:16px}
+#dl-lightbox-count{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:#f3e9d2;font-size:13px;letter-spacing:.12em;background:rgba(20,16,12,.45);padding:3px 12px;border-radius:999px;z-index:2}
+#dl-lightbox img.dl-lb-in{animation:dlLbIn .22s ease}
+@keyframes dlLbIn{from{opacity:.2}to{opacity:1}}
+@media(max-width:640px){.dl-lb-btn{width:40px;height:40px;font-size:22px}#dl-lightbox-prev{left:8px}#dl-lightbox-next{right:8px}}
+
+/* v4.11: ①九宫格图去掉正文图的 1.55em 居中 margin（否则图被下推、格子顶部露黑底）
+   ②灯箱箭头只在可悬停设备/宽屏显示；触摸端对齐微信：滑动 + 计数，无箭头 */
+.dl-gallery-item img{margin:0}
+@media (hover:none),(max-width:860px){.dl-lb-btn{display:none}}
+
+/* v4.12: 声明仅浅色，拒绝安卓 Chrome/微信的算法强制变暗（否则纸面图不变暗、文字被提白看不见） */
+:root{color-scheme:light}
+
+/* v4.13: .entry-content figure 的 1.55em margin 优先级(0,1,1)压过 .dl-gallery-item(0,1,0)，
+   导致九宫格行距被撑大；用 (0,2,0) 压回零，行列间距统一为 grid gap */
+.entry-content .dl-gallery-item{margin:0}
+
+/* v4.14: 深色模式——保留浅色为默认；html[data-theme=dark] 时纸面美术图叠深棕罩、文字转暖米色，
+   内容照片不动色；灯泡：深色常亮、浅色常灭（状态驱动，取代原悬停亮灯） */
+#bulb{cursor:pointer}
+html[data-theme="dark"]{color-scheme:dark;--ink:#e7dbbe;--muted:#ab9f83;--line:rgba(231,219,190,.22)}
+html[data-theme="dark"] #bulb{background-image:url(images/dreaminlake_light_on.png)}
+html[data-theme="light"] .brand-bar:hover #bulb{background-image:url(images/dreaminlake_light_off.png)}
+html[data-theme="dark"] body{background-color:#100d08}
+html[data-theme="dark"] a{color:#d9ab54}
+html[data-theme="dark"] .site-header{background-image:linear-gradient(rgba(16,12,7,.38),rgba(16,12,7,.38)),url(images/dreaminlake_container_top.jpg)}
+html[data-theme="dark"] .site-nav{background-image:linear-gradient(rgba(22,17,10,.84),rgba(22,17,10,.84)),url(images/dreaminlake_menu_bg.png)}
+html[data-theme="dark"] .content-wrap{background-image:linear-gradient(rgba(24,18,11,.88),rgba(24,18,11,.88)),url(images/dreaminlake_content_bg.png)}
+html[data-theme="dark"] #content_bottom{background-image:linear-gradient(rgba(24,18,11,.88),rgba(24,18,11,.88)),url(images/dreaminlake_content_bottom.png)}
+html[data-theme="dark"] #dreaminlake_footer{background-image:linear-gradient(rgba(22,17,10,.86),rgba(22,17,10,.86)),url(images/dreaminlake_footer_bg.png)}
+html[data-theme="dark"] .entry-title a:hover{color:#e9c979;text-shadow:none}
+html[data-theme="dark"] .post-navigation a{color:#e7dbbe}
+html[data-theme="dark"] .post-navigation a:hover{color:#e9c979}
+html[data-theme="dark"] .page-navigator a,html[data-theme="dark"] .page-navigator span{background:rgba(30,24,15,.85);color:#e7dbbe;border-color:rgba(231,219,190,.28)}
+html[data-theme="dark"] .page-navigator a:hover{background:#8a6420;border-color:#8a6420;color:#fff6dd}
+html[data-theme="dark"] .page-navigator .current a,html[data-theme="dark"] .page-navigator li.current span{background:#8a6420;border-color:#8a6420;color:#fff6dd}
+html[data-theme="dark"] .submit{background:#d9ab54;color:#241a11}
+html[data-theme="dark"] .respond input,html[data-theme="dark"] .respond textarea{background:rgba(255,246,220,.06);border-color:rgba(231,219,190,.25);color:#e7dbbe}
+html[data-theme="dark"] .respond input::placeholder,html[data-theme="dark"] .respond textarea::placeholder{color:rgba(231,219,190,.45)}
+html[data-theme="dark"] .entry-content pre{background:rgba(0,0,0,.35)}
+html[data-theme="dark"] .dl-gallery-item{background:#0f0c09}
+html[data-theme="dark"] .entry-content{color:#e7dbbe}
+html[data-theme="dark"] .entry-content h2,html[data-theme="dark"] .entry-content h3,html[data-theme="dark"] .entry-content h4{color:#efe0b8}
+html[data-theme="dark"] .entry-content strong{color:#f0e3c0}
+html[data-theme="dark"] .entry-content em{color:#d8c491}
+html[data-theme="dark"] .entry-content blockquote{color:#cbbd97}
+html[data-theme="dark"] .entry-content figcaption{color:#ab9f83}
+html[data-theme="dark"] .entry-content li::marker{color:#c49a52}
+
+/* v4.15: 灯泡点击区与图层分离——#bulb 只显示（下移 10px），#bulbHit 紧贴玻璃泡本体（图内坐标
+   x153-188/y67-125 + 约 7px 余量），点吊线和周围都不触发；移动端按 116/337 缩放比换算 */
+#bulb{pointer-events:none;top:10px}
+#bulbHit{position:absolute;z-index:3;right:142px;top:70px;width:49px;height:72px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+@media(max-width:640px){
+  #bulb{top:6px}
+  #bulbHit{right:40px;top:18px;width:34px;height:42px}
+}
