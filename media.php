@@ -211,6 +211,14 @@ class DL_Media
     }
 
     /** 九宫格图库：[gallery]内每行一个图片地址（或 Markdown 图片语法） */
+    /* Pexels 图改宽度：只改 images.pexels.com 且带 w 参数的地址，其余原样返回 */
+    private static function pexelsWidth($url, $w) {
+        if (false !== strpos($url, 'images.pexels.com')) {
+            $url = preg_replace('/([?&]w=)\d+/', '${1}' . $w, $url, 1);
+        }
+        return $url;
+    }
+
     private static function renderGallery($m)
     {
         $inner = preg_replace('/<br\s*\/?>/i', "\n", $m[1]);
@@ -233,7 +241,10 @@ class DL_Media
         if (empty($imgs)) return $m[0];
         $out = '<div class="dl-gallery">';
         foreach ($imgs as $src) {
-            $out .= '<figure class="dl-gallery-item"><img src="' . self::esc($src) . '" alt="" /></figure>';
+            /* 图册格子只显示约 230px，Pexels 图降到 w=600（点开灯箱时 JS 再换回 w=1200 原图）；
+               懒加载（主题已有 lazyRescue 用 IntersectionObserver 在临近视口时提前触发）。 */
+            $grid = self::pexelsWidth($src, 600);
+            $out .= '<figure class="dl-gallery-item"><img src="' . self::esc($grid) . '" alt="" loading="lazy" decoding="async" /></figure>';
         }
         return $out . '</div>';
     }
