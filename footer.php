@@ -2,5 +2,7 @@
 
 <div id="dl-lightbox" hidden><img id="dl-lightbox-img" alt="" /><span id="dl-lightbox-close" aria-label="关闭">×</span></div>
 <script>window.DL_ASSETS='<?php $this->options->themeUrl('assets/lib/'); ?>';window.DL_BILI_WORKER=<?php echo json_encode(isset($this->options->biliWorker) ? trim((string) $this->options->biliWorker) : ''); ?>;</script>
-<script src="<?php $this->options->themeUrl('media.js?v=20261023a'); ?>"></script>
+<script src="<?php $this->options->themeUrl('media.js?v=20261025c'); ?>"></script>
+<button id="dl-top" type="button" aria-label="回到顶部" title="回到顶部"><svg viewBox="0 0 48 48" aria-hidden="true"><circle class="dl-top-track" cx="24" cy="24" r="20"/><circle class="dl-top-ring" cx="24" cy="24" r="20"/><path class="dl-top-arrow" d="M24 31V16M17 23l7-7 7 7"/></svg></button>
+<script>(function(){var b=document.getElementById('dl-top');if(!b)return;var ring=b.querySelector('.dl-top-ring');var C=2*Math.PI*20;if(ring){ring.style.strokeDasharray=C}var ticking=false;function upd(){var h=document.documentElement;var y=window.scrollY||h.scrollTop||0;var max=h.scrollHeight-h.clientHeight;if(ring&&max>0){ring.style.strokeDashoffset=C*(1-y/max)}if(y>400){b.classList.add('show')}else{b.classList.remove('show')}ticking=false}function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(upd)}}window.addEventListener('scroll',onScroll,{passive:true});upd();b.addEventListener('click',function(){var smooth=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);window.scrollTo({top:0,behavior:smooth?'smooth':'auto'})})})();</script>
 <?php $this->footer(); ?></body></html>
