@@ -1,7 +1,7 @@
-/* Theme Name: DreamInLake; Version: 20261021; Author: 梦里依稀的小湖; Link: https://610000.xyz/ */
-:root{--ink:#30291f;--muted:#6e6252;--line:rgba(75,55,31,.18);--edge-l:9.3%;--edge-r:7.1%;--inner:3.2%;--left:calc(var(--edge-l) + var(--inner));--right:calc(var(--edge-r) + var(--inner))}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#20241c url(images/dreaminlake_body_bg.png) repeat;color:var(--ink);font:14.5px/1.82 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;overflow-wrap:anywhere}a{color:#65471f;text-underline-offset:.16em}img{max-width:100%;height:auto}.site-shell{width:min(88vw,1180px);margin:auto}.site-header{background:url(images/dreaminlake_container_top.jpg) center top/100% auto no-repeat}.brand-bar{position:relative;min-height:210px;padding:44px var(--right) 24px var(--left)}.site-identity{position:relative;z-index:2}.site-identity h1{margin:0;font:700 clamp(1.95rem,3.65vw,3.15rem)/1.06 Georgia,"Songti SC",serif}.site-identity h1 a{color:#f2dba4;text-decoration:none;text-shadow:0 2px 12px #000}.site-identity p{margin:.55rem 0 0;color:#d8ccb2;font-size:clamp(.74rem,.88vw,.84rem)}#bulb{position:absolute;right:0;top:0;width:337px;height:210px;background:url(images/dreaminlake_light_off.png) right top/337px 273px no-repeat}.brand-bar:hover #bulb{background-image:url(images/dreaminlake_light_on.png)}.site-nav{height:128px;background:url(images/dreaminlake_menu_bg.png) center top/100% 128px no-repeat}.nav-panel{height:128px;padding:22px var(--right) 16px var(--left);display:flex;gap:20px;justify-content:space-between}.site-nav ul{display:flex;flex:1;gap:16px;list-style:none;margin:0;padding:0}.site-nav a{display:grid;place-items:center;height:44px;padding:0 4px;color:#f2e2bd;text-decoration:none;font-size:.88rem;white-space:nowrap}.site-nav a.current{font-weight:700;text-decoration:underline;text-underline-offset:6px}.site-search{display:flex;flex:0 0 clamp(160px,15vw,210px);height:44px;border:1px solid #f3dfaf77;border-radius:999px;background:#ffffff12;overflow:hidden}.site-search input{width:100%;min-width:0;border:0;outline:0;color:#fff3d4;background:transparent;padding:8px 2px 8px 15px;font:inherit}.site-search input::placeholder{color:#efdfbd}.site-search button{border:0;background:transparent;color:#fff0c9;padding:0 12px}.content-wrap{display:block;padding:clamp(36px,3.4vw,48px) var(--right) 72px var(--left);background:url(images/dreaminlake_content_bg.png) center top/100% auto repeat-y}.main-content{width:100%;min-width:0}.post-card,.single-post{padding-bottom:38px;margin-bottom:38px;border-bottom:1px solid var(--line)}.entry-title{margin:0 0 13px;font:700 clamp(1.3rem,2.2vw,1.85rem)/1.25 Georgia,"Songti SC",serif}.entry-title a{color:inherit;text-decoration:none;transition:.2s}.entry-title a:hover{color:#9b6f2f;text-shadow:0 1px #ffefc773}.entry-meta{display:flex;flex-wrap:wrap;gap:4px 8px;margin-bottom:21px;color:var(--muted);font-size:clamp(.72rem,.86vw,.82rem)}.entry-content{font-size:clamp(.92rem,1.05vw,1rem);line-height:1.85}.entry-content p{margin:0 0 1.3em}.entry-content img{max-width:100%;height:auto}.post-navigation{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:-10px 0 36px;padding-bottom:32px;border-bottom:1px solid var(--line)}.post-navigation span{display:block;color:var(--muted);font-size:.72rem}.post-navigation a{color:var(--ink);font:700 1rem Georgia,"Songti SC",serif;text-decoration:none}.post-navigation a:hover{color:#9b6f2f}.post-navigation em{color:var(--muted);font-style:normal}.post-navigation .next{text-align:right}.comments-area,.respond{min-width:0}.comments-area h2,.widget h2{font:700 1.08rem Georgia,"Songti SC",serif}.identity{display:grid;grid-template-columns:1fr 1fr;gap:14px}.respond input,.respond textarea{display:block;width:100%;margin-bottom:14px;padding:10px;border:1px solid #5b462861;border-radius:8px;background:#ffffff0b;color:var(--ink);font:inherit;outline:0}.respond input::placeholder,.respond textarea::placeholder{color:#443625aa}.submit{border:0;border-radius:999px;background:#241a11;color:#fff;padding:10px 20px}.sidebar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(20px,2.6vw,38px);width:100%;margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}.sidebar ul{list-style:none;margin:0;padding:0}.widget{min-width:0;padding-bottom:22px;font-size:.9rem}.widget li{padding:5px 0}#content_bottom{aspect-ratio:900/105;background:url(images/dreaminlake_content_bottom.png) center/100% 100% no-repeat}#dreaminlake_footer{padding:16px;text-align:center;color:#d5c39c;background:url(images/dreaminlake_footer_bg.png) center top/100% 71px repeat-y;font-size:.82rem}#dreaminlake_footer p{margin:3px}#dreaminlake_footer a{color:#f0dcae}
+/* Theme Name: DreamInLake; Version: 20261025; Author: 梦里依稀的小湖; Link: https://610000.xyz/ */
+:root{--ink:#30291f;--muted:#6e6252;--line:rgba(75,55,31,.18);--edge-l:9.3%;--edge-r:7.1%;--inner:3.2%;--left:calc(var(--edge-l) + var(--inner));--right:calc(var(--edge-r) + var(--inner))}*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#20241c url(images/dreaminlake_body_bg.webp?v=20261025d) repeat;color:var(--ink);font:18px/1.6 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;overflow-wrap:anywhere}a{color:#65471f;text-underline-offset:.16em}img{max-width:100%;height:auto}.site-shell{width:min(88vw,1180px);margin:auto}.site-header{background:url(images/dreaminlake_container_top.webp?v=20261025d) center top/100% auto no-repeat}.brand-bar{position:relative;min-height:210px;padding:44px var(--right) 24px var(--left)}.site-identity{position:relative;z-index:2}.site-identity h1{margin:0;font:700 clamp(1.95rem,3.65vw,3.15rem)/1.06 Georgia,"Songti SC",serif}.site-identity h1 a{color:#f2dba4;text-decoration:none;text-shadow:0 2px 12px #000}.site-identity p{margin:.55rem 0 0;color:#d8ccb2;font-size:clamp(.74rem,.88vw,.84rem)}#bulb{position:absolute;right:0;top:0;width:337px;height:210px;background:url(images/dreaminlake_light_off.webp?v=20261025d) right top/337px 273px no-repeat}.brand-bar:hover #bulb{background-image:url(images/dreaminlake_light_on.webp?v=20261025d)}.site-nav{height:128px;background:url(images/dreaminlake_menu_bg.webp?v=20261025d) center top/100% 128px no-repeat}.nav-panel{height:128px;padding:22px var(--right) 16px var(--left);display:flex;gap:20px;justify-content:space-between}.site-nav ul{display:flex;flex:1;gap:16px;list-style:none;margin:0;padding:0}.site-nav a{display:grid;place-items:center;height:44px;padding:0 4px;color:#f2e2bd;text-decoration:none;font-size:.88rem;white-space:nowrap}.site-nav a.current{font-weight:700;text-decoration:underline;text-underline-offset:6px}.content-wrap{display:block;padding:clamp(36px,3.4vw,48px) var(--right) 72px var(--left);background:url(images/dreaminlake_content_bg.webp?v=20261025d) center top/100% auto repeat-y}.main-content{width:100%;min-width:0}.post-card,.single-post{padding-bottom:38px;margin-bottom:38px;border-bottom:1px solid var(--line)}.entry-title{margin:0 0 13px;font:700 clamp(1.3rem,2.2vw,1.85rem)/1.25 Georgia,"Songti SC",serif}.entry-title a{color:inherit;text-decoration:none;transition:.2s}.entry-title a:hover{color:#9b6f2f;text-shadow:0 1px #ffefc773}.entry-meta{display:flex;flex-wrap:wrap;gap:4px 8px;margin-bottom:21px;color:var(--muted);font-size:clamp(.72rem,.86vw,.82rem)}.entry-content{font-size:clamp(.92rem,1.05vw,1rem);line-height:1.85}.entry-content p{margin:0 0 1.3em}.entry-content img{max-width:100%;height:auto}.post-navigation{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:-10px 0 36px;padding-bottom:32px;border-bottom:1px solid var(--line)}.post-navigation span{display:block;color:var(--muted);font-size:.72rem}.post-navigation a{color:var(--ink);font:700 1rem Georgia,"Songti SC",serif;text-decoration:none}.post-navigation a:hover{color:#9b6f2f}.post-navigation em{color:var(--muted);font-style:normal}.post-navigation .next{text-align:right}.comments-area,.respond{min-width:0}.comments-area h2,.widget h2{font:700 1.08rem Georgia,"Songti SC",serif}.identity{display:grid;grid-template-columns:1fr 1fr;gap:14px}.respond input,.respond textarea{display:block;width:100%;margin-bottom:14px;padding:10px;border:1px solid #5b462861;border-radius:8px;background:#ffffff0b;color:var(--ink);font:inherit;outline:0}.respond input::placeholder,.respond textarea::placeholder{color:#443625aa}.submit{border:0;border-radius:999px;background:#241a11;color:#fff;padding:10px 20px}.sidebar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(20px,2.6vw,38px);width:100%;margin-top:34px;padding-top:30px;border-top:1px solid var(--line)}.sidebar ul{list-style:none;margin:0;padding:0}.widget{min-width:0;padding-bottom:22px;font-size:.9rem}.widget li{padding:5px 0}#content_bottom{aspect-ratio:900/105;background:url(images/dreaminlake_content_bottom.webp?v=20261025d) center/100% 100% no-repeat}#dreaminlake_footer{padding:16px;text-align:center;color:#d5c39c;background:url(images/dreaminlake_footer_bg.webp?v=20261025d) center top/100% 71px repeat-y;font-size:.82rem}#dreaminlake_footer p{margin:3px}#dreaminlake_footer a{color:#f0dcae}
 @media(max-width:1199px){.site-shell{width:min(98.5vw,1080px)}.brand-bar{min-height:174px;padding-top:34px}.site-nav{position:relative;margin-top:-18px;height:108px;background-size:100% 108px}.nav-panel{height:108px;padding-top:14px}.sidebar{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}.content-wrap{padding-top:34px}}
-@media(max-width:640px){:root{--inner:4.2%}.site-shell{width:100%;overflow:hidden}.brand-bar{min-height:132px;padding:22px var(--right) 10px var(--left)}.site-identity h1{font-size:clamp(1.62rem,7.4vw,2rem)}.site-identity p{font-size:.68rem}#bulb{width:104px;height:90px;background-size:116px 94px}.site-nav{margin-top:-24px;height:58px;background-size:100% 58px}.nav-panel{height:58px;padding:7px var(--right) 7px var(--left);gap:6px}.site-nav ul{gap:7px}.site-nav a{height:30px;font-size:.78rem}.site-search{flex:0 1 132px;max-width:36vw;height:34px}.site-search input{font-size:16px;padding:0 2px 0 11px}.site-search button{padding:0 8px;font-size:15px}.content-wrap{padding-top:24px}.entry-title{font-size:clamp(1.3rem,5.9vw,1.58rem)}.entry-meta{font-size:.7rem}.entry-content{font-size:.9rem}.post-navigation{grid-template-columns:1fr}.post-navigation .next{text-align:left}.identity{grid-template-columns:1fr}.sidebar{display:block;margin-top:26px;padding-top:24px}.widget{border-bottom:1px solid var(--line);margin-bottom:20px}}
+@media(max-width:640px){:root{--inner:4.2%}.site-shell{width:100%;overflow:hidden}.brand-bar{min-height:132px;padding:22px var(--right) 10px var(--left)}.site-identity h1{font-size:clamp(1.62rem,7.4vw,2rem)}.site-identity p{font-size:.68rem}#bulb{width:104px;height:90px;background-size:116px 94px}.site-nav{margin-top:-24px;height:58px;background-size:100% 58px}.nav-panel{height:58px;padding:7px var(--right) 7px var(--left);gap:6px}.site-nav ul{gap:7px}.site-nav a{height:30px;font-size:.78rem}.content-wrap{padding-top:24px}.entry-title{font-size:clamp(1.3rem,5.9vw,1.58rem)}.entry-meta{font-size:.7rem}.entry-content{font-size:.9rem}.post-navigation{grid-template-columns:1fr}.post-navigation .next{text-align:left}.identity{grid-template-columns:1fr}.sidebar{display:block;margin-top:26px;padding-top:24px}.widget{border-bottom:1px solid var(--line);margin-bottom:20px}}
 
 /* v3.5: tighter article start, quieter post navigation, refined bottom modules */
 /* Pull the first article closer to the parchment menu without touching the artwork. */
@@ -331,11 +331,11 @@
   .page-entry>.entry-title{margin-bottom:14px}
 }
 
-/* v4.0: letter-like reading typography for the parchment body */
+/* letter-like reading typography for the parchment body */
 .entry-content{
   max-width:100%;
   color:#3b3023;
-  font-family:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC",Georgia,serif;
+  font-family:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC","Microsoft YaHei",Georgia,serif;
   font-size:clamp(.86rem,.94vw,.94rem);
   line-height:2;
   letter-spacing:.012em;
@@ -563,16 +563,16 @@
 #dl-lightbox-close{position:absolute;top:18px;right:26px;font-size:40px;color:#fff;cursor:pointer;line-height:1}
 .entry-content img{cursor:zoom-in}
 
-/* v4.1: 分页导航美化（文章列表/归档/评论分页共用 .page-navigator） */
+/* 分页导航美化（文章列表/归档/评论分页共用 .page-navigator） */
 .page-navigator{list-style:none;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:34px 0 10px;padding:0}
 .page-navigator li{margin:0;padding:0}
 .page-navigator a,.page-navigator span{display:inline-block;min-width:38px;height:38px;line-height:38px;padding:0 12px;text-align:center;border:1px solid var(--line);border-radius:999px;color:#65471f;background:#fffdf6;text-decoration:none;font-size:.86rem;transition:.2s}
 .page-navigator a:hover{border-color:#65471f;background:#65471f;color:#fff8e7}
 .page-navigator .current a,.page-navigator li.current span{background:#65471f;border-color:#65471f;color:#fff8e7;font-weight:700}
-/* v4.1: 原生 video 兜底（ArtPlayer 挂载失败时仍可见可播） */
+/* 原生 video 兜底（ArtPlayer 挂载失败时仍可见可播） */
 .dl-video-native{width:100%;height:100%;display:block;background:#000}
 
-/* v4.2: 标题/日期章缩小 + 移动端羊皮纸更宽 + 正文微调 */
+/* 标题/日期章缩小 + 移动端羊皮纸更宽 + 正文微调 */
 .entry-date{flex:0 0 50px;width:50px;height:50px}
 .entry-date-day{font-size:1.02rem}
 .entry-date-ym{font-size:.5rem}
@@ -591,27 +591,27 @@
 }
 
 
-/* v4.4: 移动端纸面近满幅——纸面美术图只占图宽 9.4%-92.6%（两侧透明带），三张图统一放大把透明带挤出屏幕；文字内缩只留碎纸边 */
-/* v4.5: 放大率 118%→115% 并右移定位（position-x 54%），纸面右缘回到约 98.4%，右侧留一丝空 */
+/* 移动端纸面近满幅——纸面美术图只占图宽 9.4%-92.6%（两侧透明带），三张图统一放大把透明带挤出屏幕；文字内缩只留碎纸边 */
+/* 放大率 118%→115% 并右移定位（position-x 54%），纸面右缘回到约 98.4%，右侧留一丝空 */
 @media(max-width:640px){
   :root{--edge-l:2.2%;--edge-r:2.2%;--inner:1.4%}
-  /* v4.6: 仅左侧文字内缩 +1%（纸面位置不动）：--left 3.6%→4.6% */
+  /* 仅左侧文字内缩 +1%（纸面位置不动）：--left 3.6%→4.6% */
   :root{--left:calc(3.1% + var(--inner))}
   .content-wrap{background-size:115% auto;background-position-x:54%}
   .site-nav{background-size:115% 58px;background-position-x:54%}
   #content_bottom{background-size:115% 100%;background-position-x:54%}
 }
 
-/* v4.7: 文章标题单行省略（PC/移动一致，不换行；全文在 title 属性，悬停可见） */
+/* 文章标题单行省略（PC/移动一致，不换行；全文在 title 属性，悬停可见） */
 .entry-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .entry-title a{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .entry-heading .entry-title{flex:1 1 auto}
 
-/* v4.8: PJAX 切换时的正文淡出提示 */
+/* PJAX 切换时的正文淡出提示 */
 .content-wrap{transition:opacity .18s ease}
 body.dl-loading .content-wrap{opacity:.45}
 
-/* v4.9: 灯箱多图导航（箭头/计数/切换淡入） */
+/* 灯箱多图导航（箭头/计数/切换淡入） */
 #dl-lightbox img{cursor:default}
 .dl-lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(20,16,12,.45);color:#fff;font-size:26px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;z-index:2}
 .dl-lb-btn:hover{background:rgba(20,16,12,.78)}
@@ -622,31 +622,31 @@ body.dl-loading .content-wrap{opacity:.45}
 @keyframes dlLbIn{from{opacity:.2}to{opacity:1}}
 @media(max-width:640px){.dl-lb-btn{width:40px;height:40px;font-size:22px}#dl-lightbox-prev{left:8px}#dl-lightbox-next{right:8px}}
 
-/* v4.11: ①九宫格图去掉正文图的 1.55em 居中 margin（否则图被下推、格子顶部露黑底）
+/* ①九宫格图去掉正文图的 1.55em 居中 margin（否则图被下推、格子顶部露黑底）
    ②灯箱箭头只在可悬停设备/宽屏显示；触摸端对齐微信：滑动 + 计数，无箭头 */
 .dl-gallery-item img{margin:0}
 @media (hover:none),(max-width:860px){.dl-lb-btn{display:none}}
 
-/* v4.12: 声明仅浅色，拒绝安卓 Chrome/微信的算法强制变暗（否则纸面图不变暗、文字被提白看不见） */
+/* 声明仅浅色，拒绝安卓 Chrome/微信的算法强制变暗（否则纸面图不变暗、文字被提白看不见） */
 :root{color-scheme:light}
 
-/* v4.13: .entry-content figure 的 1.55em margin 优先级(0,1,1)压过 .dl-gallery-item(0,1,0)，
+/* .entry-content figure 的 1.55em margin 优先级(0,1,1)压过 .dl-gallery-item(0,1,0)，
    导致九宫格行距被撑大；用 (0,2,0) 压回零，行列间距统一为 grid gap */
 .entry-content .dl-gallery-item{margin:0}
 
-/* v4.14: 深色模式——保留浅色为默认；html[data-theme=dark] 时纸面美术图叠深棕罩、文字转暖米色，
+/* 深色模式——保留浅色为默认；html[data-theme=dark] 时纸面美术图叠深棕罩、文字转暖米色，
    内容照片不动色；灯泡：深色常亮、浅色常灭（状态驱动，取代原悬停亮灯） */
 #bulb{cursor:pointer}
 html[data-theme="dark"]{color-scheme:dark;--ink:#e7dbbe;--muted:#ab9f83;--line:rgba(231,219,190,.22)}
-html[data-theme="dark"] #bulb{background-image:url(images/dreaminlake_light_on.png)}
-html[data-theme="light"] .brand-bar:hover #bulb{background-image:url(images/dreaminlake_light_off.png)}
+html[data-theme="dark"] #bulb{background-image:url(images/dreaminlake_light_on.webp?v=20261025d)}
+html[data-theme="light"] .brand-bar:hover #bulb{background-image:url(images/dreaminlake_light_off.webp?v=20261025d)}
 html[data-theme="dark"] body{background-color:#100d08}
 html[data-theme="dark"] a{color:#d9ab54}
-html[data-theme="dark"] .site-header{background-image:linear-gradient(rgba(16,12,7,.38),rgba(16,12,7,.38)),url(images/dreaminlake_container_top.jpg)}
-html[data-theme="dark"] .site-nav{background-image:linear-gradient(rgba(22,17,10,.84),rgba(22,17,10,.84)),url(images/dreaminlake_menu_bg.png)}
-html[data-theme="dark"] .content-wrap{background-image:linear-gradient(rgba(24,18,11,.88),rgba(24,18,11,.88)),url(images/dreaminlake_content_bg.png)}
-html[data-theme="dark"] #content_bottom{background-image:linear-gradient(rgba(24,18,11,.88),rgba(24,18,11,.88)),url(images/dreaminlake_content_bottom.png)}
-html[data-theme="dark"] #dreaminlake_footer{background-image:linear-gradient(rgba(22,17,10,.86),rgba(22,17,10,.86)),url(images/dreaminlake_footer_bg.png)}
+html[data-theme="dark"] .site-header{background-image:linear-gradient(rgba(16,12,7,.38),rgba(16,12,7,.38)),url(images/dreaminlake_container_top.webp?v=20261025d)}
+html[data-theme="dark"] .site-nav{background-image:linear-gradient(rgba(22,17,10,.84),rgba(22,17,10,.84)),url(images/dreaminlake_menu_bg.webp?v=20261025d)}
+html[data-theme="dark"] .content-wrap{background-image:linear-gradient(rgba(24,18,11,.88),rgba(24,18,11,.88)),url(images/dreaminlake_content_bg.webp?v=20261025d)}
+html[data-theme="dark"] #content_bottom{background-image:linear-gradient(rgba(24,18,11,.88),rgba(24,18,11,.88)),url(images/dreaminlake_content_bottom.webp?v=20261025d)}
+html[data-theme="dark"] #dreaminlake_footer{background-image:linear-gradient(rgba(22,17,10,.86),rgba(22,17,10,.86)),url(images/dreaminlake_footer_bg.webp?v=20261025d)}
 html[data-theme="dark"] .entry-title a:hover{color:#e9c979;text-shadow:none}
 html[data-theme="dark"] .post-navigation a{color:#e7dbbe}
 html[data-theme="dark"] .post-navigation a:hover{color:#e9c979}
@@ -666,7 +666,7 @@ html[data-theme="dark"] .entry-content blockquote{color:#cbbd97}
 html[data-theme="dark"] .entry-content figcaption{color:#ab9f83}
 html[data-theme="dark"] .entry-content li::marker{color:#c49a52}
 
-/* v4.15: 灯泡点击区与图层分离——#bulb 只显示（下移 10px），#bulbHit 紧贴玻璃泡本体（图内坐标
+/* 灯泡点击区与图层分离——#bulb 只显示（下移 10px），#bulbHit 紧贴玻璃泡本体（图内坐标
    x153-188/y67-125 + 约 7px 余量），点吊线和周围都不触发；移动端按 116/337 缩放比换算 */
 #bulb{pointer-events:none;top:10px}
 #bulbHit{position:absolute;z-index:3;right:142px;top:70px;width:49px;height:72px;cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -674,3 +674,136 @@ html[data-theme="dark"] .entry-content li::marker{color:#c49a52}
   #bulb{top:6px}
   #bulbHit{right:40px;top:18px;width:34px;height:42px}
 }
+
+/* 回到顶部——深棕底 + 米金箭头（与 .submit 同语汇），圆环显示阅读进度；默认隐藏，滚动 400px 后出现；z-index 低于灯箱 */
+#dl-top{position:fixed;right:28px;bottom:28px;z-index:900;width:48px;height:48px;padding:0;border:1px solid rgba(242,219,164,.35);border-radius:50%;background:#241a11;color:#f2dba4;cursor:pointer;box-shadow:0 6px 20px rgba(36,26,17,.35);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s;pointer-events:none;-webkit-tap-highlight-color:transparent}
+#dl-top.show{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+#dl-top:hover{background:#3a2c1a}
+#dl-top:focus-visible{outline:2px solid #d9ab54;outline-offset:2px}
+#dl-top svg{display:block;width:100%;height:100%}
+#dl-top .dl-top-track{fill:none;stroke:rgba(242,219,164,.25);stroke-width:2.5}
+#dl-top .dl-top-ring{fill:none;stroke:#d9ab54;stroke-width:2.5;stroke-linecap:round;transform:rotate(-90deg);transform-origin:center}
+#dl-top .dl-top-arrow{fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+html[data-theme="dark"] #dl-top{background:#d9ab54;border-color:rgba(36,26,17,.3);color:#241a11}
+html[data-theme="dark"] #dl-top:hover{background:#e9c979}
+html[data-theme="dark"] #dl-top .dl-top-track{stroke:rgba(36,26,17,.22)}
+html[data-theme="dark"] #dl-top .dl-top-ring{stroke:#241a11}
+@media(max-width:1199px) and (min-width:641px){#dl-top{right:20px;bottom:20px;width:46px;height:46px}}
+@media(max-width:640px){#dl-top{right:16px;bottom:calc(16px + env(safe-area-inset-bottom));width:44px;height:44px}}
+@media (prefers-reduced-motion:reduce){#dl-top{transition:none}}
+
+/* 代码块复制按钮 + 首页 Read more */
+.entry-content pre{position:relative}
+.dl-code-copy{position:absolute;top:8px;right:8px;padding:3px 11px;border:1px solid rgba(242,219,164,.4);border-radius:999px;background:#241a11;color:#f2dba4;font:11px/1.6 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;cursor:pointer;opacity:.85}
+.dl-code-copy:hover{opacity:1;background:#3a2c1a}
+.dl-code-copy.copied{border-color:#d9ab54;color:#d9ab54}
+html[data-theme="dark"] .dl-code-copy{background:#d9ab54;border-color:#d9ab54;color:#241a11}
+html[data-theme="dark"] .dl-code-copy:hover{background:#e8c87e}
+.entry-content p.more{margin:1.4em 0 0;text-indent:0;text-align:left}
+.entry-content p.more a{display:inline-block;padding:7px 20px;border-radius:999px;background:#241a11;color:#f2dba4;text-decoration:none;font-size:.92em;letter-spacing:.06em}
+.entry-content p.more a:hover{background:#3a2c1a}
+html[data-theme="dark"] .entry-content p.more a{background:#d9ab54;color:#241a11}
+html[data-theme="dark"] .entry-content p.more a:hover{background:#e8c87e}
+
+/* 归档页 + 标签页 */
+.entry-content p.dl-arch-summary{margin:0 0 1.4em;text-indent:0;color:var(--muted);font-size:.9em}
+#archives ul{list-style:none;margin:0;padding:0}
+#archives .al_year{margin:1.5em 0 .7em;font:700 1.35rem Georgia,"Songti SC",serif;color:#3b3023}
+#archives .al_year:first-child{margin-top:.4em}
+#archives .al_mon_list>li{margin:0 0 1.3em}
+#archives .al_mon{display:inline-block;margin-bottom:.35em;font-weight:700;color:#65471f}
+#archives .al_post_list li{display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px dashed rgba(75,55,31,.16)}
+#archives .al-date{flex:0 0 3.4em;color:var(--muted);font-size:.88em}
+#archives .al_post_list a{color:var(--ink);text-decoration:none}
+#archives .al_post_list a:hover{color:#9b6f2f}
+#archives .al_post_list li:hover{background:rgba(255,255,255,.06)}
+/* 20261025o：标签球（旋转的球面标签云，无 JS 时退化为平铺列表）+ 球下随机文章 */
+.dl-tag-sphere-wrap{margin:8px 0;text-align:center}
+.dl-tag-sphere{position:relative;width:min(92vw,420px);height:min(92vw,420px);margin:0 auto}
+.dl-tag-sphere .dl-tag3d{display:inline-block;margin:6px 8px;color:var(--ink);text-decoration:none;line-height:1.4;white-space:nowrap}
+.dl-tag-sphere .dl-tag3d:hover{color:#9b6f2f}
+.dl-tag-sphere.is-3d{border-radius:50%;touch-action:pan-y;background:radial-gradient(circle at 35% 30%,rgba(255,252,240,.95),rgba(240,228,200,.55) 55%,rgba(200,180,140,.25) 78%,rgba(160,140,110,.12));box-shadow:inset 0 0 60px rgba(120,95,50,.18),0 18px 40px rgba(60,45,20,.12)}
+.dl-tag-sphere.is-3d .dl-tag3d{position:absolute;left:0;top:0;margin:0;transform:translate(-50%,-50%)}
+.dl-random-cards{margin-top:32px}
+.search-head{margin-bottom:20px}
+.dl-empty{color:var(--muted)}
+html[data-theme="dark"] #archives .al_year{color:#efe2c5}
+html[data-theme="dark"] #archives .al_mon{color:#d9ab54}
+html[data-theme="dark"] #archives .al_post_list li{border-bottom-color:rgba(242,219,164,.16)}
+html[data-theme="dark"] #archives .al_post_list a{color:#efe2c5}
+html[data-theme="dark"] .dl-tag-sphere.is-3d{background:radial-gradient(circle at 35% 30%,rgba(60,48,30,.9),rgba(40,32,20,.55) 55%,rgba(30,24,15,.3) 78%,rgba(20,16,10,.12));box-shadow:inset 0 0 60px rgba(0,0,0,.35),0 18px 40px rgba(0,0,0,.35)}
+html[data-theme="dark"] .dl-tag-sphere .dl-tag3d:hover,html[data-theme="dark"] .dl-random-link:hover{color:#e9c979}
+
+/* 归档时间线 */
+#archives{border-left:2px solid rgba(101,71,31,.35);padding-left:20px}
+#archives .al_year{position:relative}
+#archives .al_year::before{content:"";position:absolute;left:-29px;top:.5em;width:12px;height:12px;border-radius:50%;background:#d9ab54;border:2px solid #241a11}
+#archives .al_mon{position:relative}
+#archives .al_mon::before{content:"";position:absolute;left:-27px;top:.5em;width:8px;height:8px;border-radius:50%;background:#f2dba4;border:2px solid #65471f}
+html[data-theme="dark"] #archives{border-left-color:rgba(242,219,164,.35)}
+html[data-theme="dark"] #archives .al_year::before{background:#d9ab54;border-color:#f2dba4}
+html[data-theme="dark"] #archives .al_mon::before{background:#241a11;border-color:#d9ab54}
+
+/* 独立搜索页 */
+.dl-search-form{display:flex;gap:10px;margin:1.2em 0}
+.dl-search-form input{flex:1;min-width:0;padding:12px 16px;font-size:1.05rem;color:var(--ink);background:rgba(255,255,255,.12);border:1px solid rgba(101,71,31,.45);border-radius:10px;outline:0}
+.dl-search-form input:focus{border-color:#65471f}
+.dl-search-form button{flex:0 0 auto;padding:12px 22px;font-size:1.05rem;color:#f2dba4;background:#241a11;border:0;border-radius:10px;cursor:pointer}
+.dl-search-form button:hover{background:#3b3023}
+html[data-theme="dark"] .dl-search-form input{background:rgba(255,255,255,.06);border-color:rgba(242,219,164,.4)}
+html[data-theme="dark"] .dl-search-form input:focus{border-color:#d9ab54}
+html[data-theme="dark"] .dl-search-form button{background:#d9ab54;color:#241a11}
+html[data-theme="dark"] .dl-search-form button:hover{background:#e8c47c}
+@media(max-width:640px){.dl-search-form input{font-size:16px;padding:11px 14px}.dl-search-form button{font-size:16px;padding:11px 16px}}
+
+/* 预留滚动条位置，短页面不再左右跳动 */
+html{scrollbar-gutter:stable}
+@supports not (scrollbar-gutter:stable){html{overflow-y:scroll}}
+
+/* block 卡片（首页/搜索；分隔线样式不变，整块可点，左文右图，手机图在上） */
+.post-block{position:relative;display:flex;gap:24px;padding-bottom:38px;margin-bottom:38px;border-bottom:1px solid var(--line)}
+.post-block-main{flex:1;min-width:0}
+.post-block-thumb{flex:0 0 230px}
+.post-block-thumb img{display:block;width:230px;height:155px;object-fit:cover;border-radius:8px}
+.post-block .entry-excerpt{margin:0;font-size:14px;line-height:1.6;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.post-block .entry-title{font-size:clamp(1.25rem,3vw,1.5rem);line-height:1.3}
+.post-block-link{position:absolute;top:0;right:0;bottom:0;left:0;z-index:2}
+.post-block:hover .entry-title{color:#9b6f2f}
+html[data-theme="dark"] .post-block:hover .entry-title{color:#e9c979}
+@media(max-width:640px){.post-block{gap:14px}.post-block-thumb{flex:0 0 110px}.post-block-thumb img{width:110px;height:75px}}
+
+/* 字号参照 norm.press（正文 18/1.6、菜单 16、卡片标题 24、摘要 14、小字 13、页脚 12；站名与日期章保持主题原样） */
+.site-nav a{font-size:1rem}
+.entry-content p.dl-arch-summary{font-size:13px}
+#archives .al-date{font-size:13px}
+.dl-tag-count{font-size:13px}
+#dreaminlake_footer{font-size:12px}
+
+/* 手机菜单文字上移（撕纸带上沿对齐，不再垂到纸面下沿） */
+@media(max-width:640px){.nav-panel{padding-top:2px}.site-nav li a{height:24px}}
+
+/* 文章单图限高（竖图不再通天高；cover 裁成横幅，点图灯箱仍看原图；图册 1:1 格子不受影响） */
+.entry-content p:has(> img:only-child) img,
+.entry-content p:has(> a:only-child) img{width:100%;max-height:520px;object-fit:cover;border-radius:8px;display:block}
+@media(max-width:640px){.entry-content p:has(> img:only-child) img,.entry-content p:has(> a:only-child) img{max-height:340px}}
+
+/* 诗行/短行段落（带 <br> 的段落）收紧：行距 2.0→1.7，取消首行缩进与两端对齐，行行左对齐成 stanza */
+.entry-content p:has(> br){line-height:1.7;text-indent:0;text-align:left}
+
+/* 手机单图改 3:2 横幅（19 篇灯笼图不再显高；18 篇横图本身接近 3:2，基本不受影响；之前的 340px 上限同步取消） */
+@media(max-width:640px){.entry-content p:has(> img:only-child) img,.entry-content p:has(> a:only-child) img{aspect-ratio:3/2;max-height:none}}
+
+/* 置顶标识（首页置顶卡片上方的小牌子） */
+.post-sticky-label{display:inline-block;font-size:12px;line-height:1.6;color:#8a6a2f;border:1px solid #c9a86a;border-radius:999px;padding:1px 10px;margin:0 0 8px}
+html[data-theme="dark"] .post-sticky-label{color:#d4b06a;border-color:#8a6a2f}
+
+/* 20261025n：手机卡片缩略图垂直居中（卡片比图高时，图原来贴顶，看着靠上；首页/搜索共用 post-block） */
+@media(max-width:640px){.post-block-thumb{align-self:center}}
+
+/* 20261025p：标签球 520→420；随便读读改 3 篇首页同款卡片（旧随机列表样式删除）；删球说明句与随机副标题；归档列表页同步改首页卡片（archive.php） */
+
+/* 20261025r：随便读读移出 entry-content（卡片不再继承正文排版，标题下划线问题根治；20261025q 的覆盖规则随之删除） */
+
+/* 20261025s：删随便读读标题（卡片改包一层 dl-random-cards 保持间距）；随机卡片抽成共用 partial（random-cards.php），搜索页同步放 3 篇随机卡片 */
+
+/* 20261025t：搜索页删“共 N 篇”与无结果提示（只留结果/随机卡片）；搜索框与卡片间距定为 41px（表单底边距 21px + search-head 底边距 20px），标签球与卡片间距定为 40px（球底边距 8px + 卡片包层 32px），与 38px 卡片分隔节奏一致 */
