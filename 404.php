@@ -1,10 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-<?php $this->need('header.php'); ?>
-
-<h2>404 - <?php _e('页面没找到'); ?></h2>
-
-<form method="post">
-<div><input type="text" name="s" class="text" size="20" /> <input type="submit" class="submit" value="<?php _e('搜索'); ?>" /></div>
-</form>
-
-<?php $this->need('footer.php'); ?>
+<?php
+/** 404 不单独显示，直接跳到搜索页（302 临时跳转，不用 301，避免把坏地址永久指向搜索页）。 */
+$this->response->redirect(Typecho_Common::url('search.html', $this->options->index));
+exit;
