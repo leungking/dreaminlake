@@ -163,10 +163,14 @@
     var lightbox, lightboxImg;
     /* ---------- 灯箱：同组多图可切换（九宫格内成组，否则同一篇文章内成组） ---------- */
     var lbList = [], lbIdx = 0;
+    /* 灯箱看原图：图册格子用的是 w=600 小图，点开时换回 w=1200；非 Pexels 图（无 w 参数）原样 */
+    function dlFullSrc(u) {
+        return u.replace(/([?&]w=)\d+/, function (m, p1) { return p1 + '1200'; });
+    }
     function lbShow(i) {
         if (!lbList.length) return;
         lbIdx = (i + lbList.length) % lbList.length;
-        lightboxImg.src = lbList[lbIdx];
+        lightboxImg.src = dlFullSrc(lbList[lbIdx]);
         var multi = lbList.length > 1;
         var c = document.getElementById('dl-lightbox-count');
         if (c) { c.textContent = (lbIdx + 1) + ' / ' + lbList.length; c.style.display = multi ? '' : 'none'; }
@@ -179,7 +183,7 @@
         lightboxImg.classList.add('dl-lb-in');
         if (multi) [lbIdx - 1, lbIdx + 1].forEach(function (j) {
             var im = new Image();
-            im.src = lbList[(j + lbList.length) % lbList.length];
+            im.src = dlFullSrc(lbList[(j + lbList.length) % lbList.length]);
         });
     }
     function lbOpen(list, idx) {
@@ -266,6 +270,71 @@
         imgs.forEach(function (im) { io.observe(im); });
     }
 
+    /* 标签球：标签按斐波那契球面分布，绕球心缓慢旋转；字号 = 引用次数 × 透视缩放；
+       悬停暂停、拖动可转（拖动后不触发点击）；无 JS 时退化为平铺列表；减动效偏好时静止 */
+    var tagSphereRAF = null, tagSphereActive = null;
+    window.addEventListener('pointermove', function (e) {
+        var c = tagSphereActive;
+        if (!c || !c.dragging) return;
+        if (Math.abs(e.clientX - c.lastX) + Math.abs(e.clientY - c.lastY) > 5) c.moved = true;
+        c.rotY += (e.clientX - c.lastX) * 0.005;
+        c.rotX = Math.max(-1.2, Math.min(1.2, c.rotX + (e.clientY - c.lastY) * 0.005));
+        c.lastX = e.clientX; c.lastY = e.clientY;
+    });
+    window.addEventListener('pointerup', function () {
+        var c = tagSphereActive;
+        if (!c) return;
+        if (c.dragging && c.moved) c.justDragged = true;
+        c.dragging = false;
+    });
+    function initTagSphere(scope) {
+        var sphere = scope.querySelector ? scope.querySelector('#dl-tag-sphere') : null;
+        if (!sphere) return;
+        if (tagSphereRAF) cancelAnimationFrame(tagSphereRAF);
+        var tags = Array.prototype.slice.call(sphere.querySelectorAll('.dl-tag3d'));
+        if (!tags.length) return;
+        sphere.classList.add('is-3d');
+        var counts = tags.map(function (el) { return parseInt(el.getAttribute('data-count'), 10) || 0; });
+        var min = Math.min.apply(null, counts), max = Math.max.apply(null, counts), spread = max - min;
+        var pts = tags.map(function (el, i) {
+            var n = tags.length, y = n > 1 ? 1 - (i / (n - 1)) * 2 : 0;
+            var r = Math.sqrt(Math.max(0, 1 - y * y)), th = 2.399963 * i;
+            return { x: Math.cos(th) * r, y: y, z: Math.sin(th) * r, el: el,
+                base: spread > 0 ? 13 + (counts[i] - min) / spread * 13 : 16 };
+        });
+        var c = { sphere: sphere, pts: pts, rotX: -0.35, rotY: 0,
+            hovering: false, dragging: false, moved: false, justDragged: false, lastX: 0, lastY: 0,
+            reduceMotion: !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) };
+        tagSphereActive = c;
+        sphere.addEventListener('mouseenter', function () { c.hovering = true; });
+        sphere.addEventListener('mouseleave', function () { c.hovering = false; });
+        sphere.addEventListener('pointerdown', function (e) { c.dragging = true; c.moved = false; c.lastX = e.clientX; c.lastY = e.clientY; });
+        sphere.addEventListener('click', function (e) {
+            if (c.justDragged) { e.preventDefault(); e.stopPropagation(); c.justDragged = false; }
+        }, true);
+        function place() {
+            var w = sphere.clientWidth || 320, R = w / 2 - 60, cx = w / 2, cy = w / 2;
+            var small = w < 400, cosX = Math.cos(c.rotX), sinX = Math.sin(c.rotX), cosY = Math.cos(c.rotY), sinY = Math.sin(c.rotY);
+            pts.forEach(function (p) {
+                var y1 = p.y * cosX - p.z * sinX, z1 = p.y * sinX + p.z * cosX;
+                var x2 = p.x * cosY + z1 * sinY, z2 = -p.x * sinY + z1 * cosY;
+                var s = 0.85 + 0.3 * z2;
+                p.el.style.left = (cx + x2 * R * s) + 'px';
+                p.el.style.top = (cy + y1 * R * s) + 'px';
+                p.el.style.fontSize = ((small ? p.base * 0.85 : p.base) * s) + 'px';
+                p.el.style.opacity = (0.35 + 0.65 * (z2 + 1) / 2).toFixed(2);
+                p.el.style.zIndex = Math.round((z2 + 1) * 100);
+            });
+        }
+        function frame() {
+            if (!document.body.contains(sphere)) return;
+            if (!c.dragging && !c.hovering && !c.reduceMotion) c.rotY += 0.0035;
+            place();
+            tagSphereRAF = requestAnimationFrame(frame);
+        }
+        frame();
+    }
+
     /* 深色/浅色：灯泡切换（手动选择存 localStorage）；未手动选过时跟随系统变化 */
     function initTheme() {
         var bulb = document.getElementById('bulbHit') || document.getElementById('bulb');
@@ -296,11 +365,51 @@
         }
     }
 
+    /* 代码块一键复制：只给正文代码块右上角加小按钮，点后短暂显示“已复制”；
+       PJAX 换页后 init() 会重跑，已加过的用 data-copy 跳过 */
+    function initCodeCopy(scope) {
+        scope.querySelectorAll('.entry-content pre:not([data-copy])').forEach(function (pre) {
+            var code = pre.querySelector('code');
+            pre.setAttribute('data-copy', '1');
+            if (!code) return;
+            var text = code.textContent;
+            var btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'dl-code-copy';
+            btn.textContent = '复制';
+            btn.setAttribute('aria-label', '复制代码');
+            btn.addEventListener('click', function () {
+                function done(ok) {
+                    btn.textContent = ok ? '已复制' : '复制失败';
+                    btn.classList.add('copied');
+                    setTimeout(function () { btn.textContent = '复制'; btn.classList.remove('copied'); }, 1600);
+                }
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(false); });
+                } else {
+                    try {
+                        var ta = document.createElement('textarea');
+                        ta.value = text;
+                        ta.style.position = 'fixed'; ta.style.opacity = '0';
+                        document.body.appendChild(ta);
+                        ta.select();
+                        var ok = document.execCommand('copy');
+                        document.body.removeChild(ta);
+                        done(ok);
+                    } catch (e) { done(false); }
+                }
+            });
+            pre.appendChild(btn);
+        });
+    }
+
     function init() {
         initTheme();
+        initCodeCopy(document);
         bindBili(document);
         lazyRescue(document);
         initLightbox(document);
+        initTagSphere(document);
         if (document.querySelector('.dl-aplayer:not([data-inited])')) {
             ensureAPlayer().then(function () { initAPlayers(document); }, function () {});
         }
