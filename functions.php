@@ -274,5 +274,8 @@ function theme_adjacent_post($widget, $prev = true) {
     }
     if (!$row) return null;
     $path = Typecho_Router::url('post', array('cid' => $row['cid'], 'slug' => $row['slug']));
-    return array('title' => $row['title'], 'permalink' => Typecho_Common::url($path, $widget->options->index));
+    $siteOptions = Typecho_Widget::widget('Widget_Options');
+    $index = isset($siteOptions->index) ? $siteOptions->index : null;
+    if (!$index && isset($widget->options->index)) $index = $widget->options->index;
+    return array('title' => $row['title'], 'permalink' => Typecho_Common::url($path, $index));
 }
