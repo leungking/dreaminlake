@@ -238,44 +238,42 @@ function theme_sticky_cids() {
    下一篇另限 created < 当前时间，排除未来文章）。 */
 function theme_adjacent_post($widget, $prev = true) {
     $db = Typecho_Db::get();
+    $t = \Typecho\Widget::widget('Widget_Archive','type=post');
     $row = null;
     if ($prev) {
         /* 上一篇：同秒的按 cid 倒序优先，否则按时间倒序（同秒按 cid 倒序） */
-        $row = $db->fetchRow($db->select('cid', 'title', 'slug')->from('table.contents')
+        $row = $db->select()->from('table.contents')
             ->where('status = ?', 'publish')
             ->where('type = ?', $widget->type)
             ->where("password IS NULL OR password = ''")
             ->where('created = ? AND cid < ?', $widget->created, $widget->cid)
-            ->order('cid', Typecho_Db::SORT_DESC)->limit(1));
-        if (!$row) {
-            $row = $db->fetchRow($db->select('cid', 'title', 'slug')->from('table.contents')
+            ->order('cid', Typecho_Db::SORT_DESC)->limit(1);
+        if (!$db->fetchRow($row)) {
+            $row = $db->select()->from('table.contents')
                 ->where('status = ?', 'publish')
                 ->where('type = ?', $widget->type)
                 ->where("password IS NULL OR password = ''")
                 ->where('created < ?', $widget->created)
-                ->order('created', Typecho_Db::SORT_DESC)->order('cid', Typecho_Db::SORT_DESC)->limit(1));
+                ->order('created', Typecho_Db::SORT_DESC)->order('cid', Typecho_Db::SORT_DESC)->limit(1);
         }
     } else {
         /* 下一篇：同秒的按 cid 正序优先，否则按时间正序（同秒按 cid 正序） */
-        $row = $db->fetchRow($db->select('cid', 'title', 'slug')->from('table.contents')
+        $row = $db->select()->from('table.contents')
             ->where('status = ?', 'publish')
             ->where('type = ?', $widget->type)
             ->where("password IS NULL OR password = ''")
             ->where('created = ? AND cid > ?', $widget->created, $widget->cid)
-            ->order('cid', Typecho_Db::SORT_ASC)->limit(1));
-        if (!$row) {
-            $row = $db->fetchRow($db->select('cid', 'title', 'slug')->from('table.contents')
+            ->order('cid', Typecho_Db::SORT_ASC)->limit(1);
+        if (!$db->fetchRow($row)) {
+            $row = $db->select()->from('table.contents')
                 ->where('status = ?', 'publish')
                 ->where('type = ?', $widget->type)
                 ->where("password IS NULL OR password = ''")
                 ->where('created > ? AND created < ?', $widget->created, time())
-                ->order('created', Typecho_Db::SORT_ASC)->order('cid', Typecho_Db::SORT_ASC)->limit(1));
+                ->order('created', Typecho_Db::SORT_ASC)->order('cid', Typecho_Db::SORT_ASC)->limit(1);
         }
     }
-    if (!$row) return null;
-    $path = Typecho_Router::url('post', array('cid' => $row['cid'], 'slug' => $row['slug']));
-    $siteOptions = Typecho_Widget::widget('Widget_Options');
-    $index = isset($siteOptions->index) ? $siteOptions->index : null;
-    if (!$index && isset($widget->options->index)) $index = $widget->options->index;
-    return array('title' => $row['title'], 'permalink' => Typecho_Common::url($path, $index));
+    if (!$db->fetchRow($row)) return null;
+    $db->fetchRow($row, array($t, 'push'));
+    return array('title' => $t->title, 'permalink' => $t->permalink);
 }
