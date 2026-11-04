@@ -238,7 +238,7 @@ function theme_sticky_cids() {
    下一篇另限 created < 当前时间，排除未来文章）。 */
 function theme_adjacent_post($widget, $prev = true) {
     $db = Typecho_Db::get();
-    $t = \Typecho\Widget::widget('Widget_Archive','type=post');
+    $t = \Typecho\Widget::widget('Widget_Archive@adjacent','type=post');
     $row = null;
     if ($prev) {
         /* 上一篇：同秒的按 cid 倒序优先，否则按时间倒序（同秒按 cid 倒序） */
