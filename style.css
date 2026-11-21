@@ -807,3 +807,10 @@ html[data-theme="dark"] .post-sticky-label{color:#d4b06a;border-color:#8a6a2f}
 /* 20261025s：删随便读读标题（卡片改包一层 dl-random-cards 保持间距）；随机卡片抽成共用 partial（random-cards.php），搜索页同步放 3 篇随机卡片 */
 
 /* 20261025t：搜索页删“共 N 篇”与无结果提示（只留结果/随机卡片）；搜索框与卡片间距定为 41px（表单底边距 21px + search-head 底边距 20px），标签球与卡片间距定为 40px（球底边距 8px + 卡片包层 32px），与 38px 卡片分隔节奏一致 */
+
+/* 20261121a：列表视频缩略图（无图时用视频封面或首帧顶替图片位；右下角 ▶ 标记；与图片同一尺寸，手机同款缩小） */
+.post-block-thumb{position:relative}
+.post-block-thumb video{display:block;width:230px;height:155px;object-fit:cover;border-radius:8px;pointer-events:none}
+.dl-thumb-play{position:absolute;right:8px;bottom:8px;z-index:1;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.55);pointer-events:none}
+.dl-thumb-play::after{content:"";position:absolute;left:10px;top:8px;border-style:solid;border-width:5px 0 5px 8px;border-color:transparent transparent transparent #fff}
+@media(max-width:640px){.post-block-thumb video{width:110px;height:75px}.dl-thumb-play{right:5px;bottom:5px;width:20px;height:20px}.dl-thumb-play::after{left:8px;top:6px;border-width:4px 0 4px 6px}}
