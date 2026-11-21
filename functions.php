@@ -109,6 +109,50 @@ function theme_post_thumb($widget) {
     return $url;
 }
 
+/* 取文章第一个视频做列表缩略图（无图时顶替图片位）；无视频返回 null；
+   有封面返回 array('pic' => 封面, 'url' => 地址)，无封面返回 array('pic' => '', 'url' => 地址)；
+   [bilibili] 只有 BV 号、无文件地址、无封面，不做缩略图 */
+function theme_post_video_thumb($widget) {
+    $text = isset($widget->text) ? (string) $widget->text : '';
+    if ('' === $text) return null;
+    $url = '';
+    $pic = '';
+    if (preg_match('/\[Video\s+([^\]]*)\]/i', $text, $m)) {
+        /* [Video url="..." pic="..."/]（字面 [ 开头，代码示例里的 &#91; 转义写法不会命中） */
+        $atts = array();
+        preg_match_all('/([\w-]+)\s*=\s*"([^"]*)"|([\w-]+)\s*=\s*\'([^\']*)\'|([\w-]+)\s*=\s*([^\s\'"]+)/', $m[1], $mm, PREG_SET_ORDER);
+        foreach ($mm as $a) {
+            if ('' !== $a[1]) $atts[$a[1]] = $a[2];
+            elseif ('' !== $a[3]) $atts[$a[3]] = $a[4];
+            elseif ('' !== $a[5]) $atts[$a[5]] = $a[6];
+        }
+        if (isset($atts['url'])) $url = trim($atts['url']);
+        if (isset($atts['pic'])) $pic = trim($atts['pic']);
+    } elseif (preg_match('/\[(?:play|video)\](.*?)\[\/(?:play|video)\]/is', $text, $m)) {
+        /* [play] / [video] 分集：取第一行直链地址；B 站行无封面可取，跳过 */
+        foreach (preg_split('/\s*\n\s*/', trim(strip_tags($m[1]))) as $line) {
+            $line = trim($line);
+            if ('' === $line) continue;
+            if (preg_match('/BV[0-9A-Za-z]+/', $line) || false !== strpos($line, 'bilibili.com')) continue;
+            $url = $line;
+            break;
+        }
+    } elseif (preg_match('/<video[^>]+src=["\']([^"\']+)["\']/i', $text, $m)) {
+        $url = $m[1];
+        if (preg_match('/<video[^>]+poster=["\']([^"\']+)["\']/i', $text, $mm)) $pic = $mm[1];
+    }
+    if ('' === $url && '' === $pic) return null;
+    /* 相对地址补全站地址（与 theme_post_thumb 同款处理） */
+    foreach (array('url', 'pic') as $k) {
+        if ('' === $$k) continue;
+        if (0 !== strpos($$k, 'http') && 0 !== strpos($$k, '/')) {
+            ob_start(); $widget->options->siteUrl(); $base = ob_get_clean();
+            $$k = rtrim($base, '/') . '/' . ltrim($$k, '/');
+        }
+    }
+    return array('url' => $url, 'pic' => $pic);
+}
+
 /* 保存文章时自动生成标签：标题加权 + 正文高频实词，与手动标签合并（只增不减，关掉开关即停用） */
 class DL_AutoTag {
     private static function stopwords() {
