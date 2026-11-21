@@ -5,23 +5,16 @@ A Typecho theme built around original parchment / torn-paper artwork: light parc
 - **Live demo**: [梦里依稀的小湖 (610000.xyz)](https://610000.xyz/)
 - **Requires**: Typecho 1.3
 - **Tested on**: PHP 8.3 / MySQL; desktop, tablet, mobile, and the WeChat in-app browser
-- **Current version**: v20261025 (2026-10-25)
+- **Current version**: v20261121 (2026-11-21)
 
 ![DreamInLake](screenshot.png)
 
 > A theme first released in 2015, revived and polished with AI in 2026. Free and open source (MIT) — issues, improvements and pull requests are warmly welcome.
 
-## What's new in v20261025
+## What's new in v20261121
 
-- Tag page: a rotating 3D tag sphere (drag / hover, reduced-motion aware, flat-list fallback when JavaScript is off), with random-read cards below it.
-- Search: a dedicated landing page linked from the nav; results are rendered server-side as homepage-style cards. No result-count line; an empty search shows random reads instead of an error message.
-- List cards: home, search and archive lists share one card style — badge + title + two-line excerpt, the whole card clickable, thumbnail on the right (stacked on mobile).
-- Sticky posts: set the custom field `sticky=1` to pin a post to the top of the homepage's first page (with a 置顶 badge); it never repeats elsewhere in the list.
-- Previous / next navigation now works even for posts published in the same second.
-- 404 pages redirect (302) to the search page instead of showing a dead end.
-- Mobile: the menu no longer spills off the torn-paper zone; card thumbnails are vertically centered.
-- Artwork ships as WebP; homepage thumbnails, gallery grids and the lightbox use sized variants; CSS/JS pair with long server caching.
-- New theme settings: show / hide the 归档 / 标签 nav links, and an auto-tag switch (on by default) that suggests up to 5 tags for a new post.
+- List video thumbnails: posts with video but no image now show a video thumbnail on list cards — the video cover when present, otherwise the first frame (small muted preview); a ▶ badge marks video cards; image thumbnails still take precedence; Bilibili-only posts have no thumbnail yet.
+- Previous / next navigation refactored (thanks to @jrotty, PR #1): compatible with both Typecho 1.2 and 1.3; a null-options warning fixed; a dedicated widget alias (`Widget_Archive@adjacent`) so fetching the adjacent post no longer pollutes the main list widget.
 
 **中文说明见下方 [中文版](#中文版)。**
 
@@ -161,21 +154,14 @@ Issues and pull requests are welcome — bug fixes, compatibility work, new feat
 - **演示站**：[梦里依稀的小湖](https://610000.xyz/)
 - **适用**：Typecho 1.3
 - **实测环境**：PHP 8.3 / MySQL，PC、平板、手机、微信内置浏览器
-- **当前版本**：v20261025（2026-10-25）
+- **当前版本**：v20261121（2026-11-21）
 
 > 这是一款 2015 年的老主题，2026 年利用 AI 重新打磨升级。免费开源（MIT），欢迎使用，也欢迎一起完善和拓展它。
 
-## v20261025 更新内容
+## v20261121 更新内容
 
-- 标签页：可旋转的 3D 标签球（可拖动 / 悬停、支持减动效、无 JS 时回退为平铺列表），下方附「随便读读」卡片。
-- 搜索：导航栏「搜索」进入独立落地页，结果由服务端渲染为首页风格卡片；不显示结果计数，空搜索时显示随机文章而非报错文案。
-- 列表卡片：首页、搜索、归档列表共用一套卡片样式——徽标 + 标题 + 两行摘要，整卡可点，缩略图在右（移动端上下排布）。
-- 置顶文章：给文章加自定义字段 `sticky=1`，即可置顶到首页第一页首位（带「置顶」牌子），且不会在列表其他位置重复出现。
-- 上一篇 / 下一篇导航：同一秒发布的文章也能互相找到。
-- 404 页面改为 302 跳转到搜索页，不再是死胡同。
-- 移动端：菜单不再溢出撕纸区域；卡片缩略图垂直居中。
-- 主题图改为 WebP；首页缩略图、九宫格、灯箱大图分别用对应尺寸；CSS / JS 配合服务器长缓存。
-- 新增主题设置：归档 / 标签导航链接的显示开关，以及自动标签开关（默认开启），为新文章推荐最多 5 个标签。
+- 列表视频缩略图：没有图片的文章，如果带视频也会在列表卡片右侧显示缩略图——有封面用封面，没封面用视频首帧（小尺寸静音预览），右下角带 ▶ 标记；有图时仍优先显示图片；纯 B 站引用暂无缩略图。
+- 上一篇 / 下一篇重构（感谢 @jrotty 的 PR #1）：同时兼容 Typecho 1.2 和 1.3；修复空配置警告；用独立挂件别名（`Widget_Archive@adjacent`），取相邻文章不再污染主列表。
 
 ## 功能特性
 
